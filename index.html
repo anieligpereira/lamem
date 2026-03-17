@@ -8,15 +8,17 @@
 <style>
 
 body{
-font-family: Arial;
+font-family: Arial, sans-serif;
 margin:40px;
-max-width:900px;
+max-width:1000px;
+line-height:1.6;
 }
 
 header{
 display:flex;
 align-items:center;
 gap:20px;
+margin-bottom:10px;
 }
 
 header img{
@@ -28,8 +30,14 @@ color:#2c3e50;
 margin:0;
 }
 
+h2{
+color:#2c3e50;
+margin-top:40px;
+}
+
 .menu{
 margin-top:20px;
+margin-bottom:30px;
 }
 
 .menu a{
@@ -39,8 +47,46 @@ color:#1a73e8;
 font-weight:bold;
 }
 
+.menu a:hover{
+text-decoration:underline;
+}
+
 .lang{
 float:right;
+}
+
+.hero{
+background:#f5f7fa;
+padding:25px;
+border-radius:8px;
+margin-bottom:30px;
+}
+
+.research-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+margin-top:20px;
+}
+
+.card{
+text-align:center;
+padding:15px;
+border-radius:8px;
+background:#fafafa;
+}
+
+.card img{
+width:120px;
+margin-bottom:10px;
+}
+
+footer{
+margin-top:60px;
+font-size:14px;
+color:gray;
+border-top:1px solid #ddd;
+padding-top:15px;
 }
 
 </style>
@@ -65,13 +111,54 @@ float:right;
 <a href="contact.html">Contato</a>
 </div>
 
+<div class="hero">
+
 <h2>Sobre o laboratório</h2>
 
 <p>
-O laboratório investiga os processos responsáveis pela diversificação da vida
-ao longo do tempo evolutivo, integrando dados fósseis, filogenias moleculares
-e métodos comparativos.
+O Laboratório de Macroevolução e Evolução Molecular investiga os processos
+responsáveis pela diversificação da vida ao longo do tempo evolutivo.
+Integramos dados fósseis, filogenias moleculares, dados morfológicos
+e métodos comparativos para compreender padrões e processos evolutivos
+em diferentes grupos de organismos.
 </p>
 
+</div>
+
+<h2>Linhas de pesquisa</h2>
+
+<div class="research-grid">
+
+<div class="card">
+<img src="images/Macroevol.png">
+<p><b>Macroevolução</b></p>
+</div>
+
+<div class="card">
+<img src="images/biogeografia.png">
+<p><b>Biogeografia e Macroevolução</b></p>
+</div>
+
+<div class="card">
+<img src="images/fossil.png">
+<p><b>Dados fósseis e macroevolução</b></p>
+</div>
+
+</div>
+
+<h2>Instituição</h2>
+
+<p>
+Departamento de Biologia<br>
+Faculdade de Filosofia, Ciências e Letras de Ribeirão Preto<br>
+Universidade de São Paulo (USP)<br>
+Ribeirão Preto – Brasil
+</p>
+
+<footer>
+© 2026 Laboratório de Macroevolução e Evolução Molecular
+</footer>
+
 </body>
+
 </html>
