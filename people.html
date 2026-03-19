@@ -62,23 +62,38 @@ border-radius:8px;
 margin-bottom:30px;
 }
 
-.research-grid{
+/* GRID DE PESSOAS */
+.pessoas{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
 gap:25px;
 margin-top:20px;
 }
 
-.card{
+.pessoa{
 text-align:center;
 padding:15px;
 border-radius:8px;
 background:#fafafa;
 }
 
-.card img{
+.pessoa img{
 width:120px;
+height:120px;
+object-fit:cover;
+border-radius:50%;
 margin-bottom:10px;
+}
+
+.nome{
+font-weight:bold;
+margin-top:5px;
+}
+
+.cargo{
+color:#555;
+font-size:14px;
+margin-bottom:8px;
 }
 
 footer{
@@ -113,19 +128,19 @@ padding-top:15px;
 
 <div class="hero">
 
-<h1>Pessoas</h1>
+<h2>Pessoas</h2>
 
 <div class="pessoas">
 
 <div class="pessoa">
-<img src="images/Anieli.jpeg">
+<img src="images/Anieli.jpeg" alt="Anieli Pereira">
 <div class="nome">Anieli Guirro Pereira</div>
 <div class="cargo">Coordenadora</div>
 <p>Biologia evolutiva, macroevolução e filogenômica.</p>
 </div>
 
 <div class="pessoa">
-<img src="images/Daniel.jpg">
+<img src="images/Daniel.jpg" alt="Daniel Sega">
 <div class="nome">Daniel Bezerril Sega</div>
 <div class="cargo">Iniciação Científica</div>
 <p>História Evolutiva dos Mamíferos na América do Sul.</p>
@@ -148,12 +163,12 @@ padding-top:15px;
 
 <div class="pessoa">
 <div class="nome">Annelise Frazão</div>
-<div class="cargo">Colaborador</div>
+<div class="cargo">Colaboradora</div>
 </div>
 
 <div class="pessoa">
 <div class="nome">Beatriz Mello Carvalho</div>
-<div class="cargo">Colaborador</div>
+<div class="cargo">Colaboradora</div>
 </div>
 
 <div class="pessoa">
@@ -163,17 +178,21 @@ padding-top:15px;
 
 <div class="pessoa">
 <div class="nome">Daniele Silvestro</div>
-<div class="cargo">Colaborador</div>
+<div class="cargo">Colaboradora</div>
 </div>
 
 <div class="pessoa">
 <div class="nome">Juan Carrillo</div>
 <div class="cargo">Colaborador</div>
 </div>
-  
+
 </div>
 
-<p><a href="index.html">Home</a></p>
+</div>
+
+<footer>
+<p>© 2026 Laboratório de Macroevolução e Evolução Molecular</p>
+</footer>
 
 </body>
 
