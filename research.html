@@ -3,50 +3,115 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Pesquisa</title>
+<title>Laboratório de Macroevolução e Evolução Molecular</title>
 
 <style>
 
 body{
 font-family: Arial, sans-serif;
 margin:40px;
-max-width:900px;
+max-width:1000px;
+line-height:1.6;
+}
+
+header{
+display:flex;
+align-items:center;
+gap:20px;
+margin-bottom:10px;
+}
+
+header img{
+width:120px;
+}
+
+h1{
+color:#2c3e50;
+margin:0;
+}
+
+h2{
+color:#2c3e50;
+margin-top:40px;
+}
+
+.menu{
+margin-top:20px;
+margin-bottom:30px;
 }
 
 .menu a{
 margin-right:20px;
 text-decoration:none;
 color:#1a73e8;
+font-weight:bold;
 }
 
-h1{
-color:#2c3e50;
+.menu a:hover{
+text-decoration:underline;
 }
 
-.research{
-margin-top:50px;
+.lang{
+float:right;
+}
+
+.hero{
+background:#f5f7fa;
+padding:25px;
+border-radius:8px;
+margin-bottom:30px;
+}
+
+.research-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:25px;
+margin-top:20px;
+}
+
+.card{
 text-align:center;
+padding:15px;
+border-radius:8px;
+background:#fafafa;
 }
 
-.research img{
-width:180px;
-margin-bottom:15px;
+.card img{
+width:120px;
+margin-bottom:10px;
 }
 
-h2{
-color:#2c3e50;
-}
-
-p{
-line-height:1.6;
-text-align:left;
+footer{
+margin-top:60px;
+font-size:14px;
+color:gray;
+border-top:1px solid #ddd;
+padding-top:15px;
 }
 
 </style>
-
 </head>
 
 <body>
+
+<div class="lang">
+<a href="index_en.html">English</a>
+</div>
+
+<header>
+<img src="images/logo.jpg" alt="Logo do laboratório">
+<h1>Laboratório de Macroevolução e Evolução Molecular</h1>
+</header>
+
+<div class="menu">
+<a href="index.html">Início</a>
+<a href="research.html">Pesquisa</a>
+<a href="people.html">Equipe</a>
+<a href="publications.html">Publicações</a>
+<a href="contact.html">Contato</a>
+</div>
+
+<div class="hero">
 
 <h1>Pesquisa</h1>
 
